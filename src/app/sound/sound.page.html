@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Sound</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Sound</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-toggle (ionChange)="playSound()"></ion-toggle>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card style="height:400px">
+    <ion-card-header>
+      <ion-card-title>Torch</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-button shape="round" style="margin:auto" (click)="torchFunction()">{{torchStatus}}</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
